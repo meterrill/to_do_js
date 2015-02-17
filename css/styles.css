@@ -1,0 +1,11 @@
+/*li {
+  list-style-type: none;
+}*/
+
+.active-task {
+  color: #0088cc;
+}
+.active-task:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
