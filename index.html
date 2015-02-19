@@ -19,7 +19,7 @@
               <label for="new-list">Name:</label>
               <input type="text" id="new-list" class="form-control">
             </div>
-            <button type="submit" class="btn">Add</button>
+            <button type="submit" id="listButton" class="btn">Add List</button>
           </form>
           <h2>Lists</h2>
             <ul id="list-names">
@@ -27,21 +27,23 @@
             </ul>
         </div>
         <div class="col-md-6">
-          <h2>Add a task:</h2>
-          <form id="tasks">
-            <div class="form-group">
-              <label for="new-task">Task</label>
-              <input type="text" id="new-task" class="form-control">
-            </div>
-            <button type="submit" class="btn">Add</button>
-          </form>
-          <h3>To do List:</h3>
-          <ul id="to-do-tasks">
+          <div class="show-tasks">
+            <h2>Add a task:</h2>
+            <form id="tasks">
+              <div class="form-group">
+                <label for="new-task">Task</label>
+                <input type="text" id="new-task" class="form-control">
+              </div>
+              <button type="submit" id="taskButton" class="btn">Add Task</button>
+            </form>
 
-          </ul>
-          <h3>Completed List:</h3>
-          <ul id="completed-tasks">
-          </ul>
+            <h3>To do List:</h3>
+            <ul id="to-do-tasks"></ul>
+
+            <h3>Completed List:</h3>
+            <ul id="completed-tasks"></ul>
+            
+          </div>
         </div>
       </div>
     </div>
