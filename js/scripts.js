@@ -11,12 +11,12 @@ $(function() {
       event.preventDefault();
 
       var newTask = $("input#new-task").val();
-      var task = {description: newTask};
+      var task = {describe: newTask};
       newList.tasks.push(task);
 
       $("ul#to-do-tasks").text("");
       newList.tasks.forEach(function(task) {
-        $("ul#to-do-tasks").append("<li><span class='active-task'>"+ task.description + "</span></li>");
+        $("ul#to-do-tasks").append("<li><span class='active-task'>"+ task.describe + "</span></li>");
       });
 
       $("input#new-task").val("");
@@ -28,6 +28,12 @@ $(function() {
 
 
     $("ul#list-names").append("<li><span class='active-list'>" + newList.list + "</span></li>");
+
+    $(".active-list").last().click(function() {
+      $(".show-tasks").show();
+
+
+    });
 
     $("input#new-list").val("");
   });
